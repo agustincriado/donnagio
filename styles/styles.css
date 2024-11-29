@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Jaapokki';
-  src: url('/fonts/Jaapokki/Jaapokki-Regular.otf');
+  src: url('/public/fonts/Jaapokki/Jaapokki-Regular.otf');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Maven Pro';
-  src: url('/fonts/Maven/static/MavenPro-Regular.ttf');
+  src: url('public/fonts/Maven/static/MavenPro-Regular.ttf');
   font-weight: 400;
 }
 :root {
@@ -52,7 +52,7 @@ body, html {
 
 }
 .main-container {
-  background: url('../public/mt-1205-home-bg1.jpg') no-repeat;
+  background: url('/public/mt-1205-home-bg1.jpg') no-repeat;
   min-height: 100vh;
 }
 .main-logo {
