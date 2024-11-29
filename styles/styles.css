@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Jaapokki';
+  src: url('../public/fonts/Jaapokki/Jaapokki-Regular.woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../public/fonts/Maven/static/MavenPro-Regular.ttf');
+  font-weight: 400;
+}
+:root {
+  --main-color: #BE1622;
+  /* --main-bg: #fff; */
+  --main-bg: rgba(234, 202, 191, 1);
+  --secondary-bg: #F4E1E2;
+  --third-bg: #f9fafb;
+  --main-text: #2B2B2B;
+  --secondary-text: #F8CB8C;
+  --accent-color: #88BFB6;
+  --secondary-accent:  #FFD700;
+  --border-color: #f0f1f4;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--third-bg);
+  color: var(--main-color);
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 600px;
+}
+.inner-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 24px;
+  padding: 2rem 0;
+
+}
+.main-container {
+  background: url('../public/mt-1205-home-bg1.jpg') no-repeat;
+  min-height: 100vh;
+}
+.main-logo {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 1.5rem;
+}
+
+.cards-container .card:nth-child(4),
+.cards-container .card:nth-child(5) {
+  grid-column: auto; /* Fit into the new row after the first 3 */
+}
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-flow: column;
+  transition: transform .5s ease-in-out;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
+  color: var(--main-text);
+  border: solid 1px #eaecf0;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  padding: 1rem .5rem;
+  text-decoration: none;
+}
+.card:hover {
+  transform: scale(1.1);
+  color: #be1622;
+  background-color: rgba(255,255,255,1);
+
+}
+.card:hover .card-image {
+  border-radius: 0;
+}
+.card-image {
+  width: 350px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: border-radius 1s ease;
+}
+.card-information {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1.2rem;
+}
+.card-title {
+  position: relative;
+  font-family: 'Jaapokki';
+  font-weight: 400;
+}
+.card-title::after {
+  content: "-";
+  position: absolute;
+  top: 00%;
+  left: 100%;
+  margin-left: 5px;
+}
+.card-address {
+  font-family: 'Maven Pro';
+  font-weight: 400;
+}
