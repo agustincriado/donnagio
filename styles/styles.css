@@ -8,17 +8,24 @@
   src: url('../public/fonts/Maven/static/MavenPro-Regular.ttf');
   font-weight: 400;
 }
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../public/fonts/PT_Sans/PTSans-Regular.ttf');
+  font-weight: 400;
+}
 :root {
   --main-color: #BE1622;
-  /* --main-bg: #fff; */
   --main-bg: rgba(234, 202, 191, 1);
   --secondary-bg: #F4E1E2;
   --third-bg: #f9fafb;
   --main-text: #2B2B2B;
-  --secondary-text: #F8CB8C;
+  --secondary-text: #f59c9c;
   --accent-color: #88BFB6;
   --secondary-accent:  #FFD700;
   --border-color: #f0f1f4;
+  --main-font: 'Jaapokki';
+  --secondary-font: 'PT Sans', sans-serif;
+  --address-font: 'Maven Pro';
 }
 body, html {
   margin: 0;
@@ -30,9 +37,16 @@ body, html {
   background-color: var(--third-bg);
   color: var(--main-color);
   scroll-behavior: smooth;
+  overflow: hidden;
 }
-
+.main {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
 .container {
+  scroll-snap-align: start;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -107,7 +121,7 @@ body, html {
 }
 .card-title {
   position: relative;
-  font-family: 'Jaapokki';
+  font-family: var(--main-font);
   font-weight: 400;
 }
 .card-title::after {
@@ -118,6 +132,6 @@ body, html {
   margin-left: 5px;
 }
 .card-address {
-  font-family: 'Maven Pro';
+  font-family: var(--address-font);
   font-weight: 400;
 }
