@@ -1,13 +1,11 @@
-section:nth-child(2n + 1) {
-  background-color: var(--main-bg);
-}
 .navbar {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  align-items: center;
   gap: 16px;
-  box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
-  background-color: var(--main-bg);
+  box-shadow: 0px 5px 20px var(--text-shadow);
+  background-color: var(--bg-color);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -15,7 +13,29 @@ section:nth-child(2n + 1) {
 .navbar-logo {
   width: 75px;
 }
+.menu-btn {
+  display: none;
 
+}
+
+.menu-btn > div {
+  pointer-events: none;
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: transform .5s, opacity .5s;
+  transform-origin: left;
+}
+.menu-btn:hover div:first-child {
+  transform: rotate(45deg);
+}
+.menu-btn:hover div:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn:hover div:last-child {
+  transform: rotate(-45deg);
+}
 .link-container {
   display: flex;
   flex-flow: row wrap;
@@ -30,8 +50,6 @@ section:nth-child(2n + 1) {
   font-weight: 400;
 }
 .filter-bg {
-  /* background: linear-gradient(180deg, rgb(234, 202, 191) 0%, rgba(234, 205, 191, 0.5) 100%); */
-  /* filter: blur(90px); */
   position: absolute;
   height: 100%;
   top: 0;
@@ -39,20 +57,19 @@ section:nth-child(2n + 1) {
 }
 #home {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(234, 202, 191, 0.5), rgba(234, 202, 191, 0.5)), 
-  url('../public/mt-1205-home-bg1.jpg');
+  background-color: rgba(var(--bg-color-rgb), 0.2);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../public/mt-1205-home-bg1.jpg');
 }
 #servizi {
- 
-  background-image: linear-gradient(rgba(234, 202, 191, 0.9), rgba(234, 202, 191, 0.9)), url('../public/studio.jpg');
+  background-image: linear-gradient(rgba(var(--bg-color), 0.8), rgba(var(--bg-color)), 0.8), url('../public/studio.jpg');
   color: var(--main-color);
 }
 #salone, #gallery, #map, #servizi, #contatti {
   min-height: 100vh;
-  background-color: #fff;
-}
-#salone .text-article {
-  color: var(--secondary-text);
+  background-color: var(--bg-color);
 }
 #salone .text-article {
   color: var(--main-color);
@@ -73,13 +90,21 @@ section:nth-child(2n + 1) {
   justify-content: center;
   margin-right: 20%;
   color: var(--main-color);
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 5px var(--text-shadow);
 }
 .site-principal {
   position: relative;
 }
 .site-image {
   object-fit: contain;
+}
+.mask-site-image {
+  mask: url('../public/logo.png') no-repeat;
+  mask-size: contain;
+  /* background-image: url('../public/logo.png'); */
+  background-color: var(--main-color);
+  width: 400px;
+  height: 400px;
 }
 .site-name {
   position: absolute;
@@ -121,8 +146,8 @@ section:nth-child(2n + 1) {
 .service-type {
   text-align: center;
   width: 30%;
-  color: #000;
-  background-color: #fff;
+  color: var(--font-color);
+  /* background-color: #fff; */
   padding: 1rem 0.5rem;
   border-radius: 20%;
   transition: transform .25s ease;
@@ -137,7 +162,7 @@ section:nth-child(2n + 1) {
 .service-name {
   font-weight: 600;
   font-size: 21px;
-  color: #000;
+  color: var(--accent-color);
 }
 
 .container#salone {
@@ -215,10 +240,43 @@ section:nth-child(2n + 1) {
 }
 .footer {
   padding-top: .5rem;
-  background-color: var(--main-bg);
+  background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 .5rem;
+  }
+  .menu-btn {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background-color: transparent;
+    gap: .65rem;
+  }
+  .link-container {
+    height: 0;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    top: 100%;
+    right: 0%;
+    z-index: 9;
+    transition: all .5s;
+    overflow: hidden;
+    padding: 0 .5rem;
+    border-radius: 0 0 5px 5px;
+  }
+  .link-container.active {
+    height: 170px
+  }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class='red'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,19 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/site.css">
   <title>Salone Donna Gio Studio - Parruchieri a Bologna</title>
+  <script src="./script.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     </style>
-    
 </head>
 <body>
   <nav class="navbar">
     <a href="/donnagio"><img src="public/logo.png" class="navbar-logo"/></a>
+    <button id='menu-btn' class='menu-btn'>
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
     <section class="link-container">
       <a href="#home" class="navbar-link">HOME</a>
       <a href="#salone" class="navbar-link">SALONE</a>
@@ -30,11 +35,16 @@
       <a href="#contatti" class="navbar-link">CONTATTI</a>
     </section>
   </nav>
+  <dialog class='color-picker' open>
+    <button class='picker-btn red active' data-value='red' ></button>
+    <button class='picker-btn gold' data-value='gold' ></button>
+  </dialog>
   <main class='main'>
     <section id="home" class="container bg-styled">
       <article class="site-title">
         <div class='site-principal'>
-          <img class='site-image' src="public/logo.png" width='400' height='400' />
+          <!-- <img class='site-image' src="public/logo.png" width='400' height='400' /> -->
+          <div class='mask-site-image'></div>
           <div class='site-name'>
             <h1>DONNA GIO STUDIO</h1>
             <h2>Via Massei</h2>
@@ -151,10 +161,12 @@
       </article>
     </div>
     </section>
+    
   </main>
   <footer class='footer'>
     <img src="public/logo-footer.png" class="logo-footer"/>
     <small>Donna Gio -parrucchieri a Bologna</small>
     <small>Made with ❤ by <link href="https://www.valandev.com">Valandev</link></small>
   </footer>
+  
 </html>

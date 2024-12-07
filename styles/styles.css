@@ -20,12 +20,28 @@
   --third-bg: #f9fafb;
   --main-text: #2B2B2B;
   --secondary-text: #f59c9c;
-  --accent-color: #88BFB6;
-  --secondary-accent:  #FFD700;
   --border-color: #f0f1f4;
   --main-font: 'Jaapokki';
   --secondary-font: 'PT Sans', sans-serif;
   --address-font: 'Maven Pro';
+}
+:root.red {
+  --main-color:#BE1622;
+  --accent-color: #EACABF;
+  --bg-color: #F8F1EF;
+  --bg-color-rgb: 248, 241, 239;
+  --secondary-accent: #A6A6A6;
+  --font-color: #3A3A3A;
+  --text-shadow: rgba(0,0,0,0.2);
+}
+:root.gold {
+  --main-color:#c38d46;
+  --accent-color: #FFF;
+  --bg-color: #F1E7D5;
+  --bg-color-rgb: 241, 231, 213;
+  --secondary-accent: #456B6F;
+  --font-color: #3E2C1E;
+  --text-shadow: rgba(255,255,255,0.2);
 }
 body, html {
   margin: 0;
@@ -37,16 +53,17 @@ body, html {
   background-color: var(--third-bg);
   color: var(--main-color);
   scroll-behavior: smooth;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .main {
-  overflow: scroll;
-  height: 100vh;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
+  /* overflow: scroll; */
+  min-height: 100vh;
+  /* scroll-snap-points-y: repeat(100vh); */
+  /* scroll-snap-type: y mandatory; */
+  margin-top: -60px;
 }
 .container {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -134,4 +151,51 @@ body, html {
 .card-address {
   font-family: var(--address-font);
   font-weight: 400;
+}
+.color-picker {
+  all: unset;
+  position: sticky;
+  top: 90vh;
+  z-index: 100;
+  border-radius: 15%;
+  background-color: #3b3b3b;
+  display: flex;
+  width: fit-content;
+  left: 2%;
+  gap: 5px;
+  padding: .25rem .5rem;
+  /* height: 55px; */
+  /* width: 120px; */
+}
+.color-picker button {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.color-picker button:hover {
+  cursor: pointer;
+}
+.color-picker .red {
+  background-color: #BE1622;
+}
+.color-picker .gold {
+  background-color: #C68F45;
+}
+.color-picker button.active {
+  border: solid 2.5px #fff;
+}
+@media (max-width: 480px) {
+  .container {
+    justify-content: flex-start;
+    background-color: #e3bdb0;
+    padding: .5rem 0 1rem 0; 
+  }
+  .cards-container {
+    display: flex;
+    flex-flow: column;
+  }
+  .main-logo {
+    order: -1;
+  }
 }
