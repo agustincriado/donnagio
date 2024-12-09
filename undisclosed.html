@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Hair Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e" alt="Luxe Hair Studio Logo" class="h-12 w-auto">
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-800 hover:text-pink-500">Home</a>
+                    <a href="#" class="text-gray-800 hover:text-pink-500">Services</a>
+                    <a href="#" class="text-gray-800 hover:text-pink-500">Gallery</a>
+                    <a href="#" class="text-gray-800 hover:text-pink-500">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 bg-gradient-to-r from-pink-50 to-purple-50">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-8">Welcome to Luxe Hair Studio</h1>
+            <p class="text-xl text-gray-600 mb-8">Where Beauty Meets Excellence</p>
+            <button class="bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600 transition">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803" alt="Haircut" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Haircut & Styling</h3>
+                    <p class="text-gray-600 mb-4">Professional cuts and styles for any occasion</p>
+                    <p class="text-pink-500 font-bold">From $50</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2" alt="Coloring" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Hair Coloring</h3>
+                    <p class="text-gray-600 mb-4">Expert color services and treatments</p>
+                    <p class="text-pink-500 font-bold">From $80</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1522337094846-8a818d7aad23" alt="Treatment" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Hair Treatment</h3>
+                    <p class="text-gray-600 mb-4">Revitalizing treatments for healthy hair</p>
+                    <p class="text-pink-500 font-bold">From $65</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Carousel -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="relative overflow-hidden rounded-lg">
+                <div class="flex transition-transform duration-500 ease-in-out">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f" alt="Salon Interior" class="w-full h-[500px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <p class="text-gray-600 mb-4">"Amazing service! My hair has never looked better."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <p class="font-bold">Sarah Johnson</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <p class="text-gray-600 mb-4">"Professional staff and beautiful results every time."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <p class="font-bold">Emma Davis</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <p class="text-gray-600 mb-4">"The best salon experience I've ever had!"</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <p class="font-bold">Michael Smith</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2">123 Beauty Street</p>
+                    <p class="mb-2">New York, NY 10001</p>
+                    <p class="mb-2">Phone: (555) 123-4567</p>
+                    <p>Email: info@luxehairstudio.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hours</h3>
+                    <p class="mb-2">Mon-Fri: 9am - 8pm</p>
+                    <p class="mb-2">Saturday: 9am - 6pm</p>
+                    <p>Sunday: 10am - 5pm</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-pink-500">Instagram</a>
+                        <a href="#" class="hover:text-pink-500">Facebook</a>
+                        <a href="#" class="hover:text-pink-500">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
