@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,10 @@
     <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="public/site.webmanifest" />
     <link rel="stylesheet" href="styles/site.css">
-
     <title>Salone Donna Gio Studio - Parruchieri a Bologna</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+
 </head>
 <body>
     <header class="bg-white shadow-lg fixed w-full top-0 z-50">
@@ -44,7 +45,7 @@
             <div class="absolute inset-0">
                 <!-- <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Salon Interior" class="w-full h-full object-cover"> -->
                 <img src="public/studio.jpg" alt="Salon Interior" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="absolute inset-0" style="background: linear-gradient(15deg, rgba(0,0,0,0.5) 54%, rgba(0,0,0,0.2) 85%);"></div>
             </div>
             <div class="relative container mx-auto px-6 h-full flex items-center">
                 <div class="text-white">
@@ -86,7 +87,7 @@
                         <!-- <p class="text-pink-500 font-bold">From $60</p> -->
                     </article>
                     <article class="bg-white p-6 rounded-lg shadow-md">
-                        <img src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Color" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <img src="public/donna-gio-53-1024x683.jpg" alt="Color" class="w-full h-48 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">BARBER SHOP</h3>
                         <p class="text-gray-600 mb-4">Per gli uomini, abbiamo progettato un barber shop che prevede, oltre alla zona taglio, anche il servizio barba.</p>
                         <!-- <p class="text-pink-500 font-bold">From $120</p> -->
@@ -104,6 +105,28 @@
         <section id="images-gallery" class="py-20">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-12">GALLERY FOTOGRAFICA</h2>
+                <article class='carousel-container' data-index='0'>
+                    <div class='carousel-track'>
+                      <img src='public/donna-gio-19-1024x683.jpg' />
+                      <img src='public/donna-gio-23-1024x683.jpg' />
+                      <img src='public/donna-gio-37-683x1024.jpg' />
+                      <img src='public/donna-gio-33-1024x683.jpg' />
+                      <img src='public/donna-gio-39-1024x683.jpg' />
+                      <img src='public/5-DAB_9632-683x1024.jpg' />
+                      <img src='public/donna-gio-41-1024x683.jpg' />
+                      <img src='public/MG_2091-1024x683.jpg' />
+                      <img src='public/donna-gio-53-1024x683.jpg' />
+                      <img src='public/donna-gio-45-683x1024.jpg' />
+                      <img src='public/donna-gio-58-683x1024.jpg' />
+                      <img src='public/donna-gio-59-683x1024.jpg' />
+                      <img src='public/mani-SNT_9907-1024x683.jpg' />
+                      <img src='public/mani-DAB_9652-683x1024.jpg' />
+                      <img src='public/mani-DAB_9701-683x1024.jpg' />
+                      <img src='public/mani-DAB_9790-683x1024.jpg' />
+                    </div>
+                    <button class="carousel-btn prev"><</button>
+                    <button class="carousel-btn next">></button>
+                  </article>
                 <div class="grid md:grid-cols-4 gap-4">
                     <img src="public/donna-gio-19-1024x683.jpg" alt="Salon Image 1" class="w-full h-64 object-cover rounded-lg">
                     <img src="public/donna-gio-23-1024x683.jpg" alt="Salon Image 2" class="w-full h-64 object-cover rounded-lg">
@@ -127,8 +150,8 @@
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
-                  <article class='text-article site-information'>
-                    <p><strong class='strong-txt'>Donna Gio</strong> - P.IVA 00200851202</p>
+                  <article class='text-article site-information flex flex-col gap-5'>
+                    <p><strong>DONNA GIO</strong> - P.IVA 00200851202</p>
                     <p><strong>INDIRIZZO:</strong> Via Massei, 1 Bologna</p>
                     <p><strong>CHIAMA:</strong> <a href='tel:051.266555'>051.266555</a></p>
                     <p><strong>EMAIL:</strong> viamassei@donnagio.it</p>
