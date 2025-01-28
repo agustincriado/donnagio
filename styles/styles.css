@@ -1,16 +1,26 @@
 @font-face {
-  font-family: 'Jaapokki';
-  src: url('../public/fonts/Jaapokki/Jaapokki-Regular.otf');
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins/Poppins-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins/Poppins-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Hubballi';
+  src: url('../public/fonts/Hubballi/Hubballi-Regular.ttf');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Maven Pro';
   src: url('../public/fonts/Maven/static/MavenPro-Regular.ttf');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'PT Sans';
-  src: url('../public/fonts/PT_Sans/PTSans-Regular.ttf');
   font-weight: 400;
 }
 :root {
@@ -21,8 +31,8 @@
   --main-text: #2B2B2B;
   --secondary-text: #f59c9c;
   --border-color: #f0f1f4;
-  --main-font: 'Jaapokki';
-  --secondary-font: 'PT Sans', sans-serif;
+  --main-font: 'Poppins';
+  --secondary-font: 'Hubballi';
   --address-font: 'Maven Pro';
 }
 :root.red {
@@ -80,7 +90,6 @@ body, html {
   height: 100%;
   gap: 24px;
   padding: 2rem 0;
-
 }
 .main-container {
   background: url('../public/mt-1205-home-bg1.jpg') no-repeat;
@@ -97,7 +106,13 @@ body, html {
   grid-auto-rows: auto;
   gap: 1.5rem;
 }
-
+.card-logo {
+  display: flex;
+  flex-flow: column;
+}
+.card-subtitle {
+  font-weight: 600;
+}
 .cards-container .card:nth-child(4),
 .cards-container .card:nth-child(5) {
   grid-column: auto; /* Fit into the new row after the first 3 */
@@ -114,6 +129,29 @@ body, html {
   border-radius: 10px;
   padding: 1rem .5rem;
   text-decoration: none;
+  animation: 8s appear ease-in;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 .card:hover {
   transform: scale(1.1);

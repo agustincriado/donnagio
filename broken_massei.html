@@ -11,27 +11,27 @@
     <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="public/site.webmanifest" />
     <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/new_styles.css">
     <title>Salone Donna Gio Studio - Parruchieri a Bologna</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="./script.js"></script>
-
 </head>
 <body>
-    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <nav class="container mx-auto px-6 py-3">
+    <header class="customHeader">
+        <div class="logoContainer">
+            <img src="public/logo.png" class="h-12 navbar-logo" />
+            <span class="site-text">Donna Gio Studio</span>
+        </div>
+        <nav class="navbar">
             <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <img src="public/logo.png" class="h-12 navbar-logo" />
-                    <span class="ml-3 text-xl font-semibold">Donna Gio Studio</span>
+                <div class="link-container">
+                    <a href="/donnagio" class="link">HOME</a>
+                    <a href="#services" class="link">SALONE</a>
+                    <a href="#gallery" class="link">SERVIZI</a>
+                    <a href="#contact" class="link">GALLERY</a>
+                    <a href="#contact" class="link">CONTATTI</a>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-800 hover:text-pink-500">HOME</a>
-                    <a href="#services" class="text-gray-800 hover:text-pink-500">SALONE</a>
-                    <a href="#gallery" class="text-gray-800 hover:text-pink-500">SERVIZI</a>
-                    <a href="#contact" class="text-gray-800 hover:text-pink-500">GALLERY</a>
-                    <a href="#contact" class="text-gray-800 hover:text-pink-500">CONTATTI</a>
-                </div>
-                <button class="md:hidden">
+                <button id='menu-btn' class="mobile-btn">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -39,11 +39,9 @@
             </div>
         </nav>
     </header>
-
-    <main class="mt-20">
-        <section class="relative h-screen">
-            <div class="absolute inset-0">
-                <!-- <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Salon Interior" class="w-full h-full object-cover"> -->
+    <main class="main">
+        <section class="section image-section">
+            <div class="image-container">
                 <img src="public/studio.jpg" alt="Salon Interior" class="w-full h-full object-cover">
                 <div class="absolute inset-0" style="background: linear-gradient(15deg, rgba(0,0,0,0.5) 54%, rgba(0,0,0,0.2) 85%);"></div>
             </div>
@@ -57,7 +55,7 @@
             </div>
         </section>
 
-        <section id="services" class="py-20 bg-gray-50">
+        <section id="services" class="node-section gray">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-12">I NOSTRI SERVIZI</h2>
                 <div class="grid md:grid-cols-3 gap-8">
@@ -102,7 +100,7 @@
             </div>
         </section>
 
-        <section id="images-gallery" class="py-20">
+        <section id="images-gallery" class="node-section">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-12">GALLERY FOTOGRAFICA</h2>
                 <article class='carousel-container' data-index='0'>
@@ -136,7 +134,7 @@
             </div>
         </section>
 
-        <section id="contact" class="py-20 bg-gray-50">
+        <section id="contact" class="node-section gray">
             <div class='container mx-auto px-2'>
                 <h2 class="text-3xl font-bold text-center mb-12">CONTATTI</h2>
                 <div class="grid md:grid-cols-3 gap-4">
@@ -173,32 +171,28 @@
             </div>
           </section>
 
-        <footer id="footer" class="bg-gray-900 text-white py-12">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">CONTATTI</h3>
-                        <p class="mb-2">Via Massei 1 Bologna</p>
-                        <p class="mb-2">Bologna, BO 40124</p>
-                        <p class="mb-2">Numero: 051.266-555</p>
-                        <p>Email: viamassei@donnagio.it</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Orario</h3>
-                        <p class="mb-2">Lunedi - Venerdi: 9am - 8pm</p>
-                        <p class="mb-2">Sabato: 9am - 6pm</p>
-                        <p>Domenica: Chiuso</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4">Seguici su</h3>
-                        <div class="flex space-x-4">
-                            <a href="#" class="hover:text-pink-500">Instagram</a>
-                            <a href="#" class="hover:text-pink-500">Facebook</a>
-                            <a href="#" class="hover:text-pink-500">Twitter</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <footer id="footer" class="footer-section">
+            <article>
+                <h3 class="text-xl font-semibold mb-4">CONTATTI</h3>
+                <p class="mb-2">Via Massei 1 Bologna</p>
+                <p class="mb-2">Bologna, BO 40124</p>
+                <p class="mb-2">Numero: 051.266-555</p>
+                <p>Email: viamassei@donnagio.it</p>
+            </article>
+            <article>
+                <h3 class="text-xl font-semibold mb-4">Orario</h3>
+                <p class="mb-2">Lunedi - Venerdi: 9am - 8pm</p>
+                <p class="mb-2">Sabato: 9am - 6pm</p>
+                <p>Domenica: Chiuso</p>
+            </article>
+            <article>
+                <h3 class="text-xl font-semibold mb-4">Seguici su</h3>
+                <nav class="flex space-x-4">
+                    <a href="#" class="hover:text-pink-500">Instagram</a>
+                    <a href="#" class="hover:text-pink-500">Facebook</a>
+                    <a href="#" class="hover:text-pink-500">Twitter</a>
+                </nav>
+            </article>
         </footer>
     </main>
 </body>

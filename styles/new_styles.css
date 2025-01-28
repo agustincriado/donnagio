@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins/Poppins-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins/Poppins-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Hubballi';
+  src: url('../public/fonts/Hubballi/Hubballi-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../public/fonts/Maven/static/MavenPro-Regular.ttf');
+  font-weight: 400;
+}
+
+.customHeader {
+  font-family: 'Poppins';
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  padding: .2rem .15rem;
+  justify-content: space-around;
+}
+.site-text {
+  font-weight: 600;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-btn {
+  display: none;
+}
+.logoContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+.link-container .link {
+  margin: .2rem 1-rem;
+}
+.section {
+  height: 100vh;
+}
+.image-section {
+  position: relative;
+}
+.image-container {
+  position: absolute;
+}
+.node-section {
+  padding: 5rem 0;
+}
+.node-section.gray {
+  background-color: rgb(249 250 251);
+}
+.footer-section {
+  color: #fff;
+  background-color: rgb(17 24 39);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-section article {
+  margin-left: 1rem;
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .mobile-btn {
+    display: block;
+  }
+}
