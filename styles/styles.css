@@ -94,8 +94,8 @@ body, html {
   min-height: 90vh;
 }
 .main-logo {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: auto;
   animation: float 5s ease-in-out infinite;
 }
