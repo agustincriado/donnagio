@@ -65,15 +65,20 @@ body, html {
   scroll-behavior: smooth;
   /* overflow: hidden; */
 }
+.main {
+  background: linear-gradient(180deg, #f0f0f2 0%, #f5f5f7 100%);
+
+}
 .container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: linear-gradient(180deg, #f0f0f2 0%, #f5f5f7 100%);
   min-height: 600px;
   gap: 1rem;
+  box-sizing: border-box;
+  margin-top: auto;
 }
 .inner-container {
   display: flex;
@@ -86,7 +91,7 @@ body, html {
   padding: 2rem 0;
 }
 .main-container {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .main-logo {
   width: 200px;
