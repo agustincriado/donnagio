@@ -20,7 +20,7 @@
     <header class="customHeader">
         <div class="logoContainer">
             <img src="public/logo.png" class="h-12 navbar-logo" />
-            <span class="logo-text">Donna Gio Valencia</span>
+            <span class="logo-text">Donna Gio Studio</span>
         </div>
         <nav class="link-container">
             <a href="/" class="link">HOME</a>
@@ -44,7 +44,7 @@
             </div>
             <article class="main-text-container">
                 <div class="text-container">
-                    <h1 class="main-text primary-text">DONNA GIO Valencia</h1>
+                    <h1 class="main-text primary-text">DONNA GIO STUDIO</h1>
                     <h3 class="main-text secondary-text">PARRUCCHIERE PROFESSIONALI PER DONNE, UOMINI E BAMBINI</h3>
                     <p class="main-subtext">dove l'eleganza incontra la cura</p>
                     <button class="action-button">Prenota Ora</button>
@@ -166,24 +166,63 @@
             </article>
             <article>
                 <h3 class="article-title">Seguici su</h3>
-                <?php
-                require_once './icons.php';
-                ?>
                 <a href="#" class="social-link">
-                    <?php echo instagram_icon(); ?> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                      </svg>
                 </a>
                 <a href="#" class="social-link">
-                    <?php echo facebook_icon(); ?> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
+                      </svg> 
                 </a>
             </article>
         </section>
        
     </main>
-    <?php
-            require_once './footer.php';
-            $footer = get_footer(); 
-            echo $footer
-        ?>
+    <style>
+    .cards-container {
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1.5rem;
+      background-color: #f5f5f7;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .card {
+        cursor: pointer;
+        display: flex;
+        flex-flow: column;
+        transition: transform .3s ease-in-out;
+        color: var(--main-text);
+        text-decoration: none;
+        }
+        .card:hover {
+        transform: scale(1.1);
+        color: #be1622;
+        }
+    @media (max-width: 480px) {
+      .cards-container {
+        display: flex;
+        flex-flow: column;
+      }
+    }
+  </style>
+  <section class="cards-container">
+      <a class="card" href="massei.html"><h2 class="card-address">Via Massei</h2></a>
+      <a class="card" href="mazzini.html"><h2 class="card-address">Via Mazzini</h2></a>
+      <a class="card" href="petronio.html"><h2 class="card-address">via San Petronio Vecchio</h2></a>
+      <a class="card" href="saragozza.html"><h2 class="card-address">Via Saragozza</h2></a>
+      <a class="card" href="valencia.html"><h2 class="card-address">Valencia ES</h2></a>
+  </section>
     <footer class='footer'>
         <img src="public/logo-footer.png" class="logo-footer"/>
         <small>Donna Gio -parrucchieri a Bologna</small>
