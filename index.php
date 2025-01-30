@@ -22,13 +22,11 @@
         <span class='card-subtitle'>PARRUCCHIERE PER DONNA, UOMO E BAMBINO</span>
       </div>
     </section>
-    <section class="cards-container">
-      <a class="card" href="massei.html"><h2 class="card-address">Via Massei</h2></a>
-      <a class="card" href="mazzini.html"><h2 class="card-address">Via Mazzini</h2></a>
-      <a class="card" href="petronio.html"><h2 class="card-address">via San Petronio Vecchio</h2></a>
-      <a class="card" href="saragozza.html"><h2 class="card-address">Via Saragozza</h2></a>
-      <a class="card" href="valencia.html"><h2 class="card-address">Valencia ES</h2></a>
-    </section>
+    <?php
+    require_once './footer.php';
+    $footer = get_footer(); 
+    echo $footer
+    ?>
   </main>
 </body>
 </html>

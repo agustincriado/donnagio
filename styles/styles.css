@@ -91,7 +91,8 @@ body, html {
   padding: 2rem 0;
 }
 .main-container {
-  min-height: 90vh;
+  min-height: 100vh;
+  position: relative;
 }
 .main-logo {
   width: 300px;
@@ -121,24 +122,13 @@ body, html {
     transform: rotate(-1deg) scale(1.01);
   }
 }
-.cards-container {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+
 .card-logo {
   display: flex;
   flex-flow: column;
 }
 .card-subtitle {
   font-weight: 600;
-}
-.cards-container .card:nth-child(4),
-.cards-container .card:nth-child(5) {
-  grid-column: auto; /* Fit into the new row after the first 3 */
 }
 .card {
   cursor: pointer;
@@ -221,10 +211,6 @@ body, html {
     justify-content: flex-start;
     background-color: #e3bdb0;
     padding: .5rem 0 1rem 0; 
-  }
-  .cards-container {
-    display: flex;
-    flex-flow: column;
   }
   .main-logo {
     order: -1;
