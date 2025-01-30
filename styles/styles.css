@@ -123,7 +123,10 @@ body, html {
   }
 }
 
-
+.card-logo {
+  display: flex;
+  flex-flow: column;
+}
 
 @media (max-width: 480px) {
   .container {
