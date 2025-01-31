@@ -26,13 +26,16 @@
   transition: transform .5s, opacity .5s;
   transform-origin: left;
 }
-.menu-btn:hover div:first-child {
+.menu-btn:hover div:first-child,
+.menu-btn.active div:first-child {
   transform: rotate(45deg);
 }
-.menu-btn:hover div:nth-child(2) {
+.menu-btn:hover div:nth-child(2),
+.menu-btn.active div:nth-child(2) {
   opacity: 0;
 }
-.menu-btn:hover div:last-child {
+.menu-btn:hover div:last-child,
+.menu-btn.active div:last-child {
   transform: rotate(-45deg);
 }
 .link-container {
@@ -105,7 +108,7 @@
   font-weight: 600;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .navbar {
     justify-content: space-between;
     padding: 0 .5rem;
@@ -125,6 +128,7 @@
     position: absolute;
     display: flex;
     flex-flow: column;
+    background-color: #fff;
     top: 100%;
     right: 0%;
     z-index: 9;
