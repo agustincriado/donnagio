@@ -157,7 +157,12 @@
   flex-flow: column;
   padding: 1.5rem;
   border-radius: 0.5px;
+  transition: all .3s cubic-bezier(0,0,.5,1);
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+}
+.service-article:hover {
+  box-shadow: 2px 4px 16px #00000029;
+  transform: scale3d(1.01,1.01,1.01);
 }
 .service-image {
   object-fit: cover;
