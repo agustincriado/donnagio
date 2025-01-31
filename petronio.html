@@ -17,18 +17,21 @@
     <script src="./script.js"></script>
 </head>
 <body class="">
-    <header class="customHeader">
-        <div class="logoContainer">
-            <img src="public/logo.png" class="h-12 navbar-logo" />
-            <span class="logo-text">Donna Gio Via San Petronio Vecchio</span>
-        </div>
-        <nav class="link-container">
-            <a href="/" class="link">HOME</a>
-            <a href="#services" class="link">SALONE</a>
-            <a href="#gallery" class="link">SERVIZI</a>
-            <a href="#contact" class="link">GALLERY</a>
-            <a href="#contact" class="link">CONTATTI</a>
-        </nav>
+    <header class="custom-header">
+        <section class='inner-header'>
+            <a href="/" class="logoContainer">
+                <img src="public/logo.png" class="h-12 navbar-logo" />
+                <span class="logo-text">Via San Petronio Vecchio</span>
+            </a>
+            <nav class="link-container">
+                <a href="/" class="link">HOME</a>
+                <a href="#home" class="link">SALONE</a>
+                <a href="#services" class="link">SERVIZI</a>
+                <a href="#gallery" class="link">GALLERY</a>
+                <a href="#contact" class="link">CONTATTI</a>
+                <a href="/work" class="link">LAVORA CON NOI</a>
+            </nav>
+        </section>
         <button id='menu-btn' class="mobile-btn">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -37,7 +40,7 @@
     </header>
 
     <main class="main-container">
-        <section class="section image-section">
+        <section id='home' class="section image-section">
             <div class="image-container">
                 <img src="public/studio.jpg" alt="Salon Interior" class="image-main">
                 <div class="image-overlay" style="background: linear-gradient(15deg, rgba(0,0,0,0.5) 54%, rgba(0,0,0,0.2) 85%);"></div>
@@ -89,7 +92,7 @@
             </div>
         </section>
 
-        <section id="images-gallery" class="section">
+        <section id="gallery" class="section">
             <h2 class="section-title">GALLERY FOTOGRAFICA</h2>
             <article class='carousel-container' data-index='0'>
                 <div class='carousel-track'>
@@ -210,6 +213,10 @@
         transform: scale(1.1);
         color: #be1622;
         }
+        .card-address {
+        margin: .5rem .1rem;
+        font-weight: 400;
+      }
         @media (max-width: 480px) {
           .cards-container {
             display: flex;

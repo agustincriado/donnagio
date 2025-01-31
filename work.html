@@ -12,7 +12,9 @@
   <link rel="manifest" href="public/site.webmanifest" />
   <meta name="theme-color" content="#eedcc4">
   <link rel="stylesheet" href="styles/styles.css">
-  <title>Donna Gio: Parruchieri a Bologna</title>
+  <link rel="stylesheet" href="styles/new_styles.css">
+  <link rel="stylesheet" href="styles/site.css">
+  <title>Donna Gio: Parruchieri a Bologna - Lavora con noi</title>
 </head>
 <body>
   <main class='main'>
@@ -21,6 +23,19 @@
         <img src="public/logo.png" class="main-logo"/>
         <span class='card-subtitle'>PARRUCCHIERE PER DONNA, UOMO E BAMBINO</span>
       </div>
+    </section>
+    <section class='section'>
+      <h1 class='section-title'>Lavora con noi</h1>
+      <article class='contact-article'>
+        <form id="contact-form" class="contact-form">
+          <input type="text" placeholder="Nome" name="name"/>
+          <input type="email" placeholder="Email" name="email"/>
+          <input type="text" placeholder="Oggeto" name="subject"/>
+          <input type="tel" placeholder="Telefono" name="tel"/>
+          <textarea cols="40" rows="10" name="message" placeholder="Messaggio"></textarea>
+          <button class="send_button">Invia</button>
+        </form>
+      </article>
     </section>
     <style>
       .cards-container {

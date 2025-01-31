@@ -17,23 +17,27 @@
     <script src="./script.js"></script>
 </head>
 <body class="">
-    <header class="customHeader">
-        <div class="logoContainer">
-            <img src="public/logo.png" class="h-12 navbar-logo" />
-            <span class="logo-text">Donna Gio Via Saragozza</span>
-        </div>
-        <nav class="link-container">
-            <a href="/" class="link">HOME</a>
-            <a href="#services" class="link">SALONE</a>
-            <a href="#gallery" class="link">SERVIZI</a>
-            <a href="#contact" class="link">GALLERY</a>
-            <a href="#contact" class="link">CONTATTI</a>
-        </nav>
-        <button id='menu-btn' class="mobile-btn">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
+    <header class='custom-header'>
+        <section class="inner-header">
+                <a href="/" class="logoContainer">
+                    <img src="public/logo.png" class="h-12 navbar-logo" />
+                    <span class="logo-text">Via Saragozza</span>
+                </a>
+            <nav class="link-container">
+                <a href="/" class="link">HOME</a>
+                <a href="#services" class="link">SALONE</a>
+                <a href="#gallery" class="link">SERVIZI</a>
+                <a href="#contact" class="link">GALLERY</a>
+                <a href="#contact" class="link">CONTATTI</a>
+                <a href="/work" class="link">LAVORA CON NOI</a>
+    
+            </nav>
+            <button id='menu-btn' class="mobile-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </section>
     </header>
 
     <main class="main-container">
@@ -210,6 +214,10 @@
         transform: scale(1.1);
         color: #be1622;
         }
+        .card-address {
+        margin: .5rem .1rem;
+        font-weight: 400;
+      }
         @media (max-width: 480px) {
           .cards-container {
             display: flex;
