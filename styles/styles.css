@@ -14,11 +14,6 @@
   font-weight: 600;
 }
 @font-face {
-  font-family: 'Hubballi';
-  src: url('../public/fonts/Hubballi/Hubballi-Regular.ttf');
-  font-weight: 400;
-}
-@font-face {
   font-family: 'Maven Pro';
   src: url('../public/fonts/Maven/static/MavenPro-Regular.ttf');
   font-weight: 400;
@@ -28,30 +23,12 @@
   --main-bg: rgba(234, 202, 191, 1);
   --secondary-bg: #F4E1E2;
   --third-bg: #f9fafb;
-  --main-text: #2B2B2B;
-  --secondary-text: #f59c9c;
+  --main-text: #1D1D1F;
+  --secondary-text: #6e6e73;
   --border-color: #f0f1f4;
   --main-font: 'Poppins';
-  --secondary-font: 'Hubballi';
+  --secondary-font: 'Maven Pro';
   --address-font: 'Maven Pro';
-}
-:root.red {
-  --main-color:#BE1622;
-  --accent-color: #EACABF;
-  --bg-color: #F8F1EF;
-  --bg-color-rgb: 248, 241, 239;
-  --secondary-accent: #A6A6A6;
-  --font-color: #3A3A3A;
-  --text-shadow: rgba(0,0,0,0.2);
-}
-:root.gold {
-  --main-color:#c38d46;
-  --accent-color: #FFF;
-  --bg-color: #F1E7D5;
-  --bg-color-rgb: 241, 231, 213;
-  --secondary-accent: #456B6F;
-  --font-color: #3E2C1E;
-  --text-shadow: rgba(255,255,255,0.2);
 }
 body, html {
   margin: 0;
@@ -61,13 +38,10 @@ body, html {
   height: auto;
   font-family: 'Poppins';
   background-color: var(--third-bg);
-  color: var(--main-color);
   scroll-behavior: smooth;
-  /* overflow: hidden; */
 }
 .main {
   background: linear-gradient(180deg, #f0f0f2 0%, #f5f5f7 100%);
-
 }
 .container {
   display: flex;
@@ -99,6 +73,10 @@ body, html {
   height: 300px;
   margin: auto;
   animation: float 5s ease-in-out infinite;
+}
+.card-subtitle {
+  color: var(--main-color);
+  font-weight: 600;
 }
 @keyframes float {
   0%, 100% {

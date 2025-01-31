@@ -1,35 +1,3 @@
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/fonts/Poppins/Poppins-Light.ttf');
-  font-weight: 300;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/fonts/Poppins/Poppins-Regular.ttf');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../public/fonts/Poppins/Poppins-SemiBold.ttf');
-  font-weight: 600;
-}
-@font-face {
-  font-family: 'Hubballi';
-  src: url('../public/fonts/Hubballi/Hubballi-Regular.ttf');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Maven Pro';
-  src: url('../public/fonts/Maven/static/MavenPro-Regular.ttf');
-  font-weight: 400;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: 'Poppins';
-}
 .navbar {
   display: flex;
   flex-flow: row nowrap;
@@ -90,7 +58,7 @@ html, body {
   font-weight: 600;
 }
 .text-article > h2 {
-  font-size: 32px;
+  font-size: 12px;
   color: var(--main-color);
 }
 .site-img {
@@ -125,7 +93,7 @@ html, body {
   font-family: var(--address-font);
 }
 .site-information {
-  color: var(--main-color);
+  color: var(--main-text);
   text-align: start;
   font-family: var(--address-font);
 }

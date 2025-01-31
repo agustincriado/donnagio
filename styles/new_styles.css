@@ -164,6 +164,9 @@
   box-shadow: 2px 4px 16px #00000029;
   transform: scale3d(1.01,1.01,1.01);
 }
+.service-article .paragraph {
+  color: var(--secondary-text);
+}
 .service-image {
   object-fit: cover;
   border-radius: 0.5rem;
@@ -191,7 +194,7 @@
 .socials-section {
   color: #fff;
   background-color: rgb(17 24 39);
-  padding: 3rem;
+  padding: 1rem 3rem;
   display: flex;
   flex-flow: row;
   justify-content: center;
