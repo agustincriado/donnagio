@@ -68,6 +68,10 @@ body, html {
   min-height: 100vh;
   position: relative;
 }
+.main-container.reduced {
+  min-height: 20vh;
+  padding: 2rem 0;
+}
 .main-logo {
   width: 300px;
   height: 300px;
