@@ -139,6 +139,9 @@
   padding: .75rem 2rem;
   width: fit-content;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .action-button:hover {
   cursor: pointer;
@@ -232,18 +235,15 @@
 .social-link:hover svg {
   fill: var(--main-color);
 }
-.send_button {
-  all: unset;
-  text-align: center;
-  transition: transform .2s ease;
-}
-.send_button:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
+
 .contact-article {
   display: flex;
   justify-content: center;
+}
+.angle-right {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
 }
 @media (max-width: 1024px) {
   .image-main,
