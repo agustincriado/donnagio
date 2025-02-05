@@ -6,6 +6,7 @@
   width: 100%;
   background-color: #f5f5f7;
   text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .6);
 }
 .cards-inner {
     display: flex;
