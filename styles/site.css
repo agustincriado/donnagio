@@ -88,10 +88,10 @@
 }
 .contact-form .action-button {
   align-self: flex-end;
-  transition: transform .2s ease;
+  transition: transform .5s ease;
 }
 .contact-form .action-button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .contact-information {
   display: flex;
