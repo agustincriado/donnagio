@@ -248,6 +248,9 @@
 .box-shadow {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+iframe.box-shadow {
+  max-width: 500px;
+}
 @media (max-width: 1024px) {
   .image-main,
   .image-overlay {
@@ -277,6 +280,9 @@
 }
 
 @media (max-width: 480px) {
+  iframe.box-shadow {
+    max-width: 350px;
+  }
   .service-grid {
   grid-template-columns: 1fr; 
   } 

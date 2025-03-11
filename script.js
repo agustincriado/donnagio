@@ -94,4 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(target)
     setTheme(target.dataset.value)
   }))
+  document.getElementById('bottom_display').addEventListener('click', () => {
+    document.getElementById('bottom_display').classList.toggle('display')
+    document.querySelector('.cards-container').classList.toggle('display')
+  })
 })
