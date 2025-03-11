@@ -280,6 +280,15 @@ iframe.box-shadow {
 }
 
 @media (max-width: 480px) {
+  .image-main, .image-overlay {
+    max-height: 300px;
+  }
+  .section {
+    min-height: 40vh;
+  }
+  .main-text-container {
+    max-height: 350px;
+  }
   iframe.box-shadow {
     max-width: 350px;
   }
