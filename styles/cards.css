@@ -30,10 +30,13 @@
   display: none;
 }
 .cards-display.mobile::after {
-  content: "\2B9D"
+  content: "\27A4";
+  display: inline-block;
+  transition: transform .5s ease;
+  transform: rotate(-90deg);
 }
 .cards-display.mobile.display::after {
- content: "\2B9F";
+  transform: rotate(90deg);
 }
 .cards-inner {
   display: flex;
